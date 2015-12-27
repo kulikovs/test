@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9010AA41C30547900E103FE /* KSOutputType.c in Sources */ = {isa = PBXBuildFile; fileRef = C9010A9E1C30547900E103FE /* KSOutputType.c */; };
+		C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */ = {isa = PBXBuildFile; fileRef = C9010AA21C30547900E103FE /* KSTestOutputType.c */; };
+		C90374EE1C30535C00F8206F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C90374ED1C30535C00F8206F /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C90374E81C30535C00F8206F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C9010A9E1C30547900E103FE /* KSOutputType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSOutputType.c; sourceTree = "<group>"; };
+		C9010A9F1C30547900E103FE /* KSOutputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSOutputType.h; sourceTree = "<group>"; };
+		C9010AA21C30547900E103FE /* KSTestOutputType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSTestOutputType.c; sourceTree = "<group>"; };
+		C9010AA31C30547900E103FE /* KSTestOutputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestOutputType.h; sourceTree = "<group>"; };
+		C90374EA1C30535C00F8206F /* KSMacros */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KSMacros; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90374ED1C30535C00F8206F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90374E71C30535C00F8206F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9010A9C1C30547900E103FE /* KSSourse */ = {
+			isa = PBXGroup;
+			children = (
+				C9010A9D1C30547900E103FE /* KSOutputType */,
+			);
+			path = KSSourse;
+			sourceTree = "<group>";
+		};
+		C9010A9D1C30547900E103FE /* KSOutputType */ = {
+			isa = PBXGroup;
+			children = (
+				C9010A9E1C30547900E103FE /* KSOutputType.c */,
+				C9010A9F1C30547900E103FE /* KSOutputType.h */,
+			);
+			path = KSOutputType;
+			sourceTree = "<group>";
+		};
+		C9010AA01C30547900E103FE /* KSTest */ = {
+			isa = PBXGroup;
+			children = (
+				C9010AA11C30547900E103FE /* KSTestOutputType */,
+			);
+			path = KSTest;
+			sourceTree = "<group>";
+		};
+		C9010AA11C30547900E103FE /* KSTestOutputType */ = {
+			isa = PBXGroup;
+			children = (
+				C9010AA21C30547900E103FE /* KSTestOutputType.c */,
+				C9010AA31C30547900E103FE /* KSTestOutputType.h */,
+			);
+			path = KSTestOutputType;
+			sourceTree = "<group>";
+		};
+		C90374E11C30535C00F8206F = {
+			isa = PBXGroup;
+			children = (
+				C90374EC1C30535C00F8206F /* KSMacros */,
+				C90374EB1C30535C00F8206F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90374EB1C30535C00F8206F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90374EA1C30535C00F8206F /* KSMacros */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90374EC1C30535C00F8206F /* KSMacros */ = {
+			isa = PBXGroup;
+			children = (
+				C9010A9C1C30547900E103FE /* KSSourse */,
+				C9010AA01C30547900E103FE /* KSTest */,
+				C90374ED1C30535C00F8206F /* main.c */,
+			);
+			path = KSMacros;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90374E91C30535C00F8206F /* KSMacros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90374F11C30535C00F8206F /* Build configuration list for PBXNativeTarget "KSMacros" */;
+			buildPhases = (
+				C90374E61C30535C00F8206F /* Sources */,
+				C90374E71C30535C00F8206F /* Frameworks */,
+				C90374E81C30535C00F8206F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSMacros;
+			productName = KSMacros;
+			productReference = C90374EA1C30535C00F8206F /* KSMacros */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90374E21C30535C00F8206F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = KulikovS;
+				TargetAttributes = {
+					C90374E91C30535C00F8206F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C90374E51C30535C00F8206F /* Build configuration list for PBXProject "KSMacros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C90374E11C30535C00F8206F;
+			productRefGroup = C90374EB1C30535C00F8206F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90374E91C30535C00F8206F /* KSMacros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90374E61C30535C00F8206F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9010AA41C30547900E103FE /* KSOutputType.c in Sources */,
+				C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */,
+				C90374EE1C30535C00F8206F /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C90374EF1C30535C00F8206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C90374F01C30535C00F8206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C90374F21C30535C00F8206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C90374F31C30535C00F8206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90374E51C30535C00F8206F /* Build configuration list for PBXProject "KSMacros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90374EF1C30535C00F8206F /* Debug */,
+				C90374F01C30535C00F8206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90374F11C30535C00F8206F /* Build configuration list for PBXNativeTarget "KSMacros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90374F21C30535C00F8206F /* Debug */,
+				C90374F31C30535C00F8206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90374E21C30535C00F8206F /* Project object */;
+}
