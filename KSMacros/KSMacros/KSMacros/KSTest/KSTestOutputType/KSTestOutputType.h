@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+extern
 void KSTestOutputType();
 
 #endif /* KSTestOutputType_h */

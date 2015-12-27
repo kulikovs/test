@@ -9,10 +9,11 @@
 #include "KSTestOutputType.h"
 #include "KSOutputType.h"
 
-int numb = 10;
-char *string = "Puk";
-short numbShort = 20;
-double numbDouble = 20.56;
+static const int      numberTypeInt    = 10;
+static const char   * stringTypeChar   = "Hello";
+static const short    numberTypeShort  = 20;
+static const double   numbTypeDouble   = 20.56;
+static const long     numberTypeLong    = -300;
 
 
 void KSTestOutputType() {
@@ -33,10 +34,22 @@ void KSTestOutputType() {
     puts("We waiting -  type long = 8");
     KSPrintSizeType(long)
     
-    puts("\t\tPrint value");
-
-    KSOutputType(int, numb);
+    puts("\t\tPrint the value of using macros ");
     
+    puts("We waiting -  10");
+    KSTypeReturn(int, numberTypeInt);
+    
+    puts("We waiting -  Hello");
+    KSTypeReturn(char, stringTypeChar);
+    
+    puts("We waiting -  20");
+    KSTypeReturn(short, numberTypeShort);
+    
+    puts("We waiting -  20.56");
+    KSTypeReturn(double, numbTypeDouble);
+    
+    puts("We waiting -  This function does not support this type");
+    KSTypeReturn(long, numberTypeLong);
 }
     
 
