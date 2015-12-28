@@ -13,8 +13,8 @@
 #include <stdbool.h>
 
 typedef struct {
-    char      brand[25];
-    char      model[30];
+    char    * brand;
+    char    * model;
     float     engineDisplacement;
     short     horsePower;
     short     speed;
