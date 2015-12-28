@@ -10,5 +10,26 @@
 #define KS_ar_h
 
 #include <stdio.h>
+#include <stdbool.h>
+
+typedef struct {
+    char      brand[25];
+    char      model[30];
+    float     engineDisplacement;
+    short     horsePower;
+    short     speed;
+    short     rpm;
+    bool      pushButtonStart;
+    bool      rearviewCamera;
+    bool      cruiseControl;
+    bool      usbAudioInterface;
+    bool      wheelType;
+    bool      typeEngine;
+    long long runKm;
+    double    lenght;
+    int       price;
+} KSCarData;
+
+
 
 #endif /* KS_ar_h */

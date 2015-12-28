@@ -10,6 +10,7 @@
 		C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */ = {isa = PBXBuildFile; fileRef = C9010AA21C30547900E103FE /* KSTestOutputType.c */; };
 		C90374EE1C30535C00F8206F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C90374ED1C30535C00F8206F /* main.c */; };
 		C9041C661C31CB7D0099D21D /* KSСar.c in Sources */ = {isa = PBXBuildFile; fileRef = C9041C641C31CB7D0099D21D /* KSСar.c */; };
+		C9041C6A1C31E3200099D21D /* KSTestCarStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = C9041C681C31E3200099D21D /* KSTestCarStruct.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C90374ED1C30535C00F8206F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C9041C641C31CB7D0099D21D /* KSСar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "KSСar.c"; sourceTree = "<group>"; };
 		C9041C651C31CB7D0099D21D /* KSСar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSСar.h"; sourceTree = "<group>"; };
+		C9041C681C31E3200099D21D /* KSTestCarStruct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSTestCarStruct.c; sourceTree = "<group>"; };
+		C9041C691C31E3200099D21D /* KSTestCarStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestCarStruct.h; sourceTree = "<group>"; };
 		C970241D1C314C2A0037B061 /* KSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +60,7 @@
 		C9010AA01C30547900E103FE /* KSTest */ = {
 			isa = PBXGroup;
 			children = (
+				C9041C671C31E3080099D21D /* KSTestCarStruct */,
 				C9010AA11C30547900E103FE /* KSTestOutputType */,
 			);
 			path = KSTest;
@@ -104,6 +108,15 @@
 				C9041C651C31CB7D0099D21D /* KSСar.h */,
 			);
 			path = KSCar;
+			sourceTree = "<group>";
+		};
+		C9041C671C31E3080099D21D /* KSTestCarStruct */ = {
+			isa = PBXGroup;
+			children = (
+				C9041C681C31E3200099D21D /* KSTestCarStruct.c */,
+				C9041C691C31E3200099D21D /* KSTestCarStruct.h */,
+			);
+			path = KSTestCarStruct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +178,7 @@
 				C9041C661C31CB7D0099D21D /* KSСar.c in Sources */,
 				C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */,
 				C90374EE1C30535C00F8206F /* main.c in Sources */,
+				C9041C6A1C31E3200099D21D /* KSTestCarStruct.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

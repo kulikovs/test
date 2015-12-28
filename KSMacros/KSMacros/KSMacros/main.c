@@ -8,10 +8,12 @@
 
 #include <stdio.h>
 #include "KSTestOutputType.h"
+#include "KSTestCarStruct.h"
 
 int main(int argc, const char * argv[]) {
 
-    KSTestOutputType();
+   // KSTestOutputType();
+    KSTestCarStruct();
     
     return 0;
 }
