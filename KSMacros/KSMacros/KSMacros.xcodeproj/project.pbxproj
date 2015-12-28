@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9010AA41C30547900E103FE /* KSOutputType.c in Sources */ = {isa = PBXBuildFile; fileRef = C9010A9E1C30547900E103FE /* KSOutputType.c */; };
 		C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */ = {isa = PBXBuildFile; fileRef = C9010AA21C30547900E103FE /* KSTestOutputType.c */; };
 		C90374EE1C30535C00F8206F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C90374ED1C30535C00F8206F /* main.c */; };
 /* End PBXBuildFile section */
@@ -25,12 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C9010A9E1C30547900E103FE /* KSOutputType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSOutputType.c; sourceTree = "<group>"; };
-		C9010A9F1C30547900E103FE /* KSOutputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSOutputType.h; sourceTree = "<group>"; };
 		C9010AA21C30547900E103FE /* KSTestOutputType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KSTestOutputType.c; sourceTree = "<group>"; };
 		C9010AA31C30547900E103FE /* KSTestOutputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestOutputType.h; sourceTree = "<group>"; };
 		C90374EA1C30535C00F8206F /* KSMacros */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KSMacros; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90374ED1C30535C00F8206F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C970241D1C314C2A0037B061 /* KSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +45,9 @@
 		C9010A9C1C30547900E103FE /* KSSourse */ = {
 			isa = PBXGroup;
 			children = (
-				C9010A9D1C30547900E103FE /* KSOutputType */,
+				C970241D1C314C2A0037B061 /* KSMacro.h */,
 			);
 			path = KSSourse;
-			sourceTree = "<group>";
-		};
-		C9010A9D1C30547900E103FE /* KSOutputType */ = {
-			isa = PBXGroup;
-			children = (
-				C9010A9E1C30547900E103FE /* KSOutputType.c */,
-				C9010A9F1C30547900E103FE /* KSOutputType.h */,
-			);
-			path = KSOutputType;
 			sourceTree = "<group>";
 		};
 		C9010AA01C30547900E103FE /* KSTest */ = {
@@ -160,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9010AA41C30547900E103FE /* KSOutputType.c in Sources */,
 				C9010AA51C30547900E103FE /* KSTestOutputType.c in Sources */,
 				C90374EE1C30535C00F8206F /* main.c in Sources */,
 			);

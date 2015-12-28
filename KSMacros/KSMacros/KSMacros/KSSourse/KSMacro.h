@@ -9,28 +9,18 @@
 #ifndef KSOutputType_h
 #define KSOutputType_h
 
-#include <stdio.h>
+#define KSPrintSizeType(type) \
+    printf("Size type "#type" = %lu\n", sizeof(type));
 
-#define KSPrintSizeType(type) void prinfSizeType_##type(type);{\
-printf("Size type "#type" = %lu\n", sizeof(type));}
+#define KSOutputValue(qualifier, value) \
+    printf("This is "#qualifier"\n", value);
 
-#define KSOutputType1(type, qualifier, value) void output_##type(type, qualifier,\
-value);{printf("This is %"#qualifier, value);} //macros is not used
+#define KSOutputType(type, qualifier) \
+    void KSOutput_##type(value) {\
+        KSOutputValue(qualifier, value)\
+    }
 
-#define KSOutputType(type, value) void output_##type(type, value);{\
-                                if (#type == "int" || #type == "short"){\
-                                    printf("%d \n", value);\
-                                } else if (#type == "char"){\
-                                    printf("%s \n", value);\
-                                } else if (#type == "float" || #type == "double"){\
-                                    printf("%f \n", value);\
-                                } else if (#type){\
-                                    printf("This function does not support this \
-                                            type of");\
-                                }\
-                            }
 
-#define KSTypeReturn(type, value) KSOutputType(type, value);
 
 
 #endif /* KSOutputType_h */
