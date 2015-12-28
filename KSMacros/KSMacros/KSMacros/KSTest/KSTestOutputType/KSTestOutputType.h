@@ -9,8 +9,6 @@
 #ifndef KSTestOutputType_h
 #define KSTestOutputType_h
 
-#include <stdio.h>
-
 extern
 void KSTestOutputType();
 

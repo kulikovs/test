@@ -16,11 +16,8 @@
     printf("This is "#qualifier"\n", value);
 
 #define KSOutputType(type, qualifier) \
-    void KSOutput_##type(value) {\
-        KSOutputValue(qualifier, value)\
+    void KSOutput_##type(type value) {\
+       KSOutputValue(qualifier, value);\
     }
-
-
-
 
 #endif /* KSOutputType_h */
