@@ -20,4 +20,7 @@
        KSOutputValue(qualifier, value);\
     }
 
+#define KSOutputTypeMacro(type, value) \
+    KSOutput_##type(value)
+
 #endif /* KSOutputType_h */

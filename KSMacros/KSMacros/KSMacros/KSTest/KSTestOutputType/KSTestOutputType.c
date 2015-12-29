@@ -12,11 +12,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-static const int      numberTypeInt    = 10;
-static const char   * stringTypeChar   = "Hello";
-static const double   numbTypeDouble   = 20.56;
-static const long     numberTypeLong   = 30000000;
-
 KSOutputType(long, %lu)
 KSOutputType(int, %d)
 //KSOutputType(char, %s)
@@ -41,40 +36,23 @@ void KSTestOutputType() {
     puts("We waiting -  type long = 8");
     KSPrintSizeType(long)
     
+    puts("\n\t\tPrint value using macro 'KSOutputTypeMacro'");
     
-    puts("\n\t\tPrint value using macro 'KSOutputValue'");
+    puts("We waiting -  number = 8");
+    KSOutputTypeMacro(int, 8);
     
-    puts("We waiting -   number 10");
-    KSOutputValue(%d, numberTypeInt);
+//    puts("We waiting - string 'Hello'");
+//    KSOutputTypeMacro(char, "Hello");
     
-    puts("We waiting -   string Hello");
-    KSOutputValue(%s, stringTypeChar)
+    puts("We waiting -  number = 5000000");
     
-    puts("We waiting -   number 20.56");
-    KSOutputValue(%f, numbTypeDouble);
+    KSOutputTypeMacro(long, 5000000);
+    puts("We waiting -  number = 1000.99");
     
-    puts("We waiting -   number 30000000");
-    KSOutputValue(%lu, numberTypeLong);
+    KSOutputTypeMacro(double, 1000.99);
     
-    puts("We waiting - bool - '1'");
-    KSOutputValue(%d, true);
-    
-    
-    puts("\n\t\tPrint value ising macro 'KSOutputType'");
-    
-    //    KSOutput_char(stringTypeChar);
-
-    puts("We waiting -   number 10");
-    KSOutput_int(numberTypeInt);
-    
-    puts("We waiting -   number 20.56");
-    KSOutput_double(numbTypeDouble);
-    
-    puts("We waiting - bool - '1'");
-    KSOutput_bool(true);
-    
-    puts("We waiting -   number 30000000");
-    KSOutput_long(numberTypeLong);
+    puts("We waiting -  'bool' true = 1");
+    KSOutputTypeMacro(bool, true);
 }
     
 
